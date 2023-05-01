@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scale-up-bottom {
+    animation: scale-up-bottom 0.4s;
+}
+
+@keyframes scale-up-bottom {
+    0% {
+        transform: scale(.5);
+        transform-origin: center bottom
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: center bottom
+    }
+}
+
+body {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
